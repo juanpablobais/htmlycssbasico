@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JustBeauty / Contacto </title>
+    <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/output.css">
+    <meta name="description" content="En esta página podrás contactarte con nosotros para efectuar una compra.">
+    <meta name="keywords"  content="CONTACTO, COSMÉTICA, TRATAMIENTOS, PRODUCTOS, MAQUILLAJE">
+</head>
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="header__container">
+            <a href="../html/index.html"><img src="../assets/logos/logo.png" alt=""></a>
+             <nav class="navegacion">
+                <ul class="menu__navegacion">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Servicios</a>
+                        <ul class="submenu">
+                            <li><a href="productos.html">Productos</a></li>
+                            <li><a href="tratamientos.html">Tratamientos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="content">
+            <h1>Contacto</h1>
+            <article class="article__content">
+				<form class="form">
+		
+					<label for="nombre">Nombre</label>
+					<input type="text" name="nombre">
+					<label for="email">Email</label>
+					<input type="email" name="email">
+					<br>
+					
+					¿Desea recibir nuestras noticias?
+					<input type="checkbox" name="acepta" value="1">
+					
+					<label for="nosotros">¿Cómo supo de nosotros?:</label>
+					<select name="nosotros">
+						<option name= "internet">Vía internet</option>
+						<option name= "recomendacion">Recomendación amiga</option>
+						<option name= "redes">Redes sociales</option>
+						<option name= "otro">Otro</option>
+					</select>
+					<br>
+					<label for="comentarios">Comentarios:</label>
+					<textarea name="consulta" rows="10" cols="70">Ingrese sus comentarios</textarea>
+					
+					<input type="submit" value="Enviar">
+					<input type="reset" value="Reiniciar">
+				</form>
+            </article>
+
+
+        </main>
+
+        <aside class="sidebar__aside">
+			¿Interesado en alguno de nuestros productos o tratamiento? 
+			No dudes en ponerte en contacto con nosotros. Sólo tienes que rellenar el formulario de contacto
+			y pronto recibirás noticias.
+
+        </aside>
+ 
+        <footer class="footer">
+           <a href="../html/index.html"> <h4 class="footer__logo">Just Beauty</h4></a>
+            <p>Lo mejor para tu piel.</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>
