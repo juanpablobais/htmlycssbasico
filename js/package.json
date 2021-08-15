@@ -1,0 +1,26 @@
+{
+  "name": "nuevo_repositorio",
+  "version": "1.0.0",
+  "description": "Web de venta de cosméticos y tratamientos para la piel.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanpablobais/nuevo_repo.git"
+  },
+  "keywords": [
+    "VEGANISMO",
+    "COSMÉTICA",
+    "PRODUCTOS",
+    "MAQUILLAJE",
+    "PIEL"
+  ],
+  "author": "Juan Pablo Bais",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juanpablobais/nuevo_repo/issues"
+  },
+  "homepage": "https://github.com/juanpablobais/nuevo_repo#readme"
+}

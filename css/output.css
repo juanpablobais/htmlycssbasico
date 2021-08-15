@@ -4,308 +4,166 @@
 }
 
 body {
-  background: rgb(226,226,226);
-  background: linear-gradient(0deg, rgba(226,226,226,1) 6%, rgba(255,185,244,1) 100%);
-  font-family: 'Rubik', sans-serif;
+  background-color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-/* HEADER */
+/*HEADER GENERAL*/
 
-.header__container img {
-  width: 300px;
-  height: 100px;
-  display: block;
-  margin: auto;
+.header_container {
+  background-color: #f1b5b8;
+  border: 2px solid #e68387;
 }
 
-.header__container img:hover {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
-
-/* MENU */
-
-.navegacion{
-width: 300px;
-margin: auto;
-background: #410026;
-}
-
-.navegacion ul{
-list-style: none;
-}
-
-.menu__navegacion > li{
-position: relative;
-display: inline-block;
-}
-
-.menu__navegacion > li > a{
-display: block;
-padding: 15px 20px;
-color: #ffffff;
-font-family: 'Rubik', sans-serif;
-text-decoration: none;
-}
-
-.menu__navegacion li a:hover{
-color: rgb(151, 0, 118);
-transition: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-
-/* Submenu*/
-
-.submenu{
-position: absolute;
-background: #410026;
-width: 145px;
-visibility: hidden;
-opacity: 0;
-transition: opacity 1.5s;
-}
-
-.submenu li a{
-display: block;
-padding: 15px;
-color: #fff;
-font-family: 'Open sans';
-text-decoration: none;
-}
-
-.menu__navegacion li:hover .submenu{
-visibility: visible;
-opacity: 1;
-}
-
-/* TABLA */
-
-h2 {
+.logo_principal {
   text-align: center;
-}
-
-table {
-  border: 2px solid;
-  margin: 0 auto;
-  display: inline-block;
- }
-
-th {
-  background-color:#410026;
-  border: 1px solid;
- }
-
- tr, td {
-  border: 1px solid;
- }
-
-/* CONTAINER */
-
-.container {
-  width: 90%;
-  max-width: 1000px;
-  min-width: 300px;
-  margin: 1.6em auto;
-  display: grid;
-  gap: 1.6em;
-  grid-template-columns: repeat(5, 1fr);
-}
-
-.container>.header__container, .container>.content, .container>.sidebar__aside, .container>.footer, .container>div {
-  background: rgb(151, 0, 118);
-  padding: 20px;
-  border: 1px solid #000000;
-}
-
-.container>.header__container, .container>.footer {
-  grid-column: 1/-1;
-  background-color: #410026;
-  color: #ffffff;
-}
-
-.container>.content {
-  grid-column: span 3;
-  grid-row: span 4;
-}
-
-.content>.article__content {
-  background: #410026;
-  padding: 67px;
-  margin-top: 5px;
-  color: #dfe6e9
-}
-
-.content .article__content h1,
-.content .article__content p {
+  font-size: 60px;
   padding: 10px;
 }
 
-.container>.sidebar__aside {
-  grid-column: span 2;
-  grid-row: span 4;
-  background: #410026;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/*MENÚ DE NAVEGACIÓN GENERAL*/
+
+.nav_menu {
+  text-align: center;
+  padding: 10px;
 }
 
-.container .sidebar__aside img {
+a {
+  text-decoration: none;
+}
+
+.menu_navegacion {
   display: inline-block;
-  width: 100%;
-  margin-top: 0px;
+  color: black;
+  padding: 10px 10px;
+  border-bottom: 2px solid black;
 }
 
-.container>.related-post {
-  background: #2d3436;
-  color: #ffffff;
-  height: 180px;
-  width: 180px;
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.5s ease;
-  padding: 0;
+.menu_navegacion:hover {
+background: #a35559;
+color: white;
 }
 
-.container>.related-post:hover {
-  cursor: pointer;
-  color: #000000;
-  background: #410026;
+/*TABLA DE HORARIOS DE INDEX*/
+
+table, th, td {
+  border: 1px solid black;
+  
 }
 
-.article__content img {
-  display: block;
-  margin: auto;
-}
-
-.article__content h1 {
+table {
+  width: 45%;
+  border-collapse: collapse;
+  margin: 0 auto;
   text-align: center;
 }
 
-/* MEDIA QUERIES */
-
-@media screen and (max-width: 500px) {
-  .header__container {
-      text-align: center;
-  }
-  .container .content {
-      grid-column: 1 / -1;
-  }
-  .container .sidebar__aside {
-      grid-column: 1 / 6;
-  }
-
-  .container .related-post {
-      grid-column: 1/-1;
-  }
-  img {
-      max-width: 415px;
-  };
-
-}
-
-/* FORMULARIO DE CONTACTO */
-
-.form {
-  width: 90%;
-  max-width: 600px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.form input {
-  width: 90%;
-  height: 30px;
-  margin: 0.5rem;
-}
-
-textarea {
-  width: 100%;
-  max-width: 250px;
-}
-
-.form button {
-  padding: 0.5em 1em;
-  border: none;
-  background: rgb(100, 200, 255);
-  cursor: pointer;
+h2 {
+  text-align: center;
 }
 
 li {
   list-style-type: none;
 }
 
-#shampoo, #glowskin, #cepilloBambu, #mesoCorpo, #balsamoFacial {
-  max-height: 180px;
-  width: 180px;
+/*ABOUT US DE INDEX*/
+
+.about_us_article {
+  background-color: #f1b5b8;
+  margin: 50px;
+  padding: 6px;
+  border-radius: 20px;
 }
 
-.footer__logo:hover {
-transition: 3s;
-font-size: 2rem;
-}
-
-ul.slider{
-  position: relative;
-  max-width: 415px;
-  max-height: 415px;
-}
-
-ul.slider li {
-    position: block;
-    left: 0px;
-    top: 0px;
-    opacity: 0;
-    width: inherit;
-    height: inherit;
-    transition: opacity .5s;
-    background:#fff;
-}
-
-ul.slider li img{
-  max-width: 415px;
-  max-height: 415px;
-  object-fit: cover;
-}
-
-ul.slider li:first-child {
-    opacity: 1;
-}
-
-ul.slider li:target {
-    opacity: 1;
-}
-
-.slider__menu {
-  text-align: center;
-  margin: 20px;
-}
-
-.slider__menu li{
-  display: inline-block;
+.about_us {
+  margin: 30px;
   text-align: center;
 }
 
-.slider__menu li a{
-  display: inline-block;
-  color: white;
-  text-decoration: none;
-  background-color: grey;
+/*FOOTER GENERAL*/
+
+.footer {
+  background-color: #f1b5b8;
+  border: 2px solid #e68387;
   padding: 10px;
-  width: 20px;
-  height: 20px;
+}
+
+.footer_logo {
+  font-size: 25px;
+  padding: 7px;
+  text-align: center;
+}
+
+.p_footer {
   font-size: 20px;
-  border-radius: 100%;
+  margin: 0 auto;
+  text-align: center;
 }
 
+/*PRODUCTOS Y TRATAMIENTOS*/
 
-
-a {
-    text-decoration: none;
-    color: antiquewhite;
+.imagenes_productos {
+  margin: 25px;
 }
 
-img {
-    width: 100%;
-    max-width: 415px;
+.imagenes_productos img {
+  display: inline-block;
+  margin: 5px;
+  border: 2px solid #a35559;
+  max-width: 98%;
+}
+
+h3, .texto_productos, .texto_tratamientos, .texto_contacto {
+  padding: 10px;
+  text-align: center;
+}
+
+/*FORMULARIO DE CONTACTO*/
+
+form {
+  width: 400px;
+  margin: auto;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 7px;
+}
+
+h2 {
+  color: black;
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: 1px solid black;
+}
+
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+#boton_form {
+  background: #e68387;
+}
+
+#boton_form:hover {
+  background: #a35559;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width:480px){
+  form {
+    width:100%;
+  }
 }

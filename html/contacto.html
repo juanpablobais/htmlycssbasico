@@ -14,65 +14,33 @@
 
 <body>
 
-    <div class="container">
-        <header class="header__container">
-            <a href="../html/index.html"><img src="../assets/logos/logo.png" alt=""></a>
-             <nav class="navegacion">
-                <ul class="menu__navegacion">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="#">Servicios</a>
-                        <ul class="submenu">
-                            <li><a href="productos.html">Productos</a></li>
-                            <li><a href="tratamientos.html">Tratamientos</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main class="content">
-            <h1>Contacto</h1>
-            <article class="article__content">
-				<form class="form">
-		
-					<label for="nombre">Nombre</label>
-					<input type="text" name="nombre">
-					<label for="email">Email</label>
-					<input type="email" name="email">
-					<br>
-					
-					¿Desea recibir nuestras noticias?
-					<input type="checkbox" name="acepta" value="1">
-					
-					<label for="nosotros">¿Cómo supo de nosotros?:</label>
-					<select name="nosotros">
-						<option name= "internet">Vía internet</option>
-						<option name= "recomendacion">Recomendación amiga</option>
-						<option name= "redes">Redes sociales</option>
-						<option name= "otro">Otro</option>
-					</select>
-					<br>
-					<label for="comentarios">Comentarios:</label>
-					<textarea name="consulta" rows="10" cols="70">Ingrese sus comentarios</textarea>
-					
-					<input type="submit" value="Enviar">
-					<input type="reset" value="Reiniciar">
-				</form>
-            </article>
+    <header class="header_container">
+        <h1 class="logo_principal">JUST BEAUTY</h1>
+
+<nav class="nav_menu">  
+ <a href="../index.html" class="menu_navegacion">INICIO</a>
+ <a href="./productos.html" class="menu_navegacion">PRODUCTOS</a>
+ <a href="./tratamientos.html" class="menu_navegacion">TRATAMIENTOS</a>
+ <a href="./contacto.html" class="menu_navegacion">CONTACTO</a>
+</nav>
+     </header>
 
 
-        </main>
+    <form action="">
+    <h2>CONTACTO</h2>
+    <p class="texto_contacto">¿Interesado en alguno de nuestros productos o tratamiento? 
+    No dudes en ponerte en contacto con nosotros. Sólo tienes que rellenar el formulario de contacto
+    y pronto recibirás noticias.</p>
+    <input type="text" name="Nombre" placeholder="Nombre">
+    <input type="text" name="Correo" placeholder="Correo">
+    <input type="text" name="Teléfono" placeholder="Teléfono">
+    <textarea name="mensaje" placeholder="Escriba aquí su consulta" id="" cols="30" rows="10"></textarea>
+    <input type="button" value="ENVIAR" id="boton_form"> 
+</form>
 
-        <aside class="sidebar__aside">
-			¿Interesado en alguno de nuestros productos o tratamiento? 
-			No dudes en ponerte en contacto con nosotros. Sólo tienes que rellenar el formulario de contacto
-			y pronto recibirás noticias.
-
-        </aside>
- 
         <footer class="footer">
-           <a href="../html/index.html"> <h4 class="footer__logo">Just Beauty</h4></a>
-            <p>Lo mejor para tu piel.</p>
+            <h4 class="footer_logo">Just Beauty</h4>
+            <p class="p_footer">Lo mejor para tu piel.</p>
         </footer>
 
     </div>
